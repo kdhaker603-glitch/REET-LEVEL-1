@@ -50,6 +50,7 @@
                 </div>
                 <div class="flex justify-between items-center text-xs pt-1">
                     <span class="text-emerald-400 font-semibold">Right: <span id="live-right-count">0</span></span>
+                    <span class="text-amber-400 font-semibold italic"><i class="fa-solid fa-bolt"></i> Fast Skip Enabled</span>
                     <span class="text-rose-400 font-semibold">Wrong: <span id="live-wrong-count">0</span></span>
                 </div>
             </div>
@@ -60,15 +61,23 @@
             </div>
 
             <div id="options-container" class="grid grid-cols-1 gap-3.5">
-                </div>
+            </div>
 
-            <div class="flex justify-between items-center pt-2 gap-4">
+            <div class="flex flex-wrap justify-between items-center pt-2 gap-4">
                 <button onclick="downloadLiveResult()" class="bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 text-xs md:text-sm font-semibold px-4 py-3 rounded-xl transition flex items-center gap-2 active:scale-95 shadow-md">
                     <i class="fa-solid fa-file-arrow-down text-emerald-400"></i> Download Result.json
                 </button>
-                <button id="next-btn" onclick="goToNextQuestion()" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-bold px-6 py-3 rounded-xl shadow-lg transition active:scale-95 flex items-center gap-2 disabled:opacity-50 disabled:pointer-events-none" disabled>
-                    Agla Prasna <i class="fa-solid fa-chevron-right text-xs"></i>
-                </button>
+                
+                <div class="flex items-center gap-3">
+                    <!-- Bulk Skip Button -->
+                    <button id="skip-btn" onclick="skipFiftyQuestions()" class="bg-amber-600/10 hover:bg-amber-600/20 border border-amber-500/30 text-amber-400 text-sm font-bold px-5 py-3 rounded-xl transition active:scale-95 flex items-center gap-2">
+                        <i class="fa-solid fa-forward-fast text-xs"></i> Skip 50 Qs
+                    </button>
+                    
+                    <button id="next-btn" onclick="goToNextQuestion()" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-bold px-6 py-3 rounded-xl shadow-lg transition active:scale-95 flex items-center gap-2 disabled:opacity-50 disabled:pointer-events-none" disabled>
+                        Agla Prasna <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -122,7 +131,7 @@
             subjectId: subjectId,
             subjectName: subjectName,
             timestamp: new Date().toLocaleString(),
-            summary: { totalAttempted: 0, right: 0, wrong: 0, accuracy: "0%" },
+            summary: { totalAttempted: 0, right: 0, wrong: 0, skipped: 0, accuracy: "0%" },
             details: []
         };
 
@@ -164,18 +173,19 @@
 
         function renderQuestionCycle() {
             document.getElementById('next-btn').disabled = true;
+            document.getElementById('skip-btn').disabled = false;
             
+            if (questionsPool.length === 0) {
+                showCompletionDashboard();
+                return;
+            }
+
             // Render Live Header Count Mapping
             document.getElementById('question-counter').innerText = `${totalQuestionsCount - questionsPool.length + 1} / ${totalQuestionsCount}`;
             
             // Progress Bar Logic (100 Max Loop Cycle Resets)
             document.getElementById('batch-progress-text').innerText = `${answeredInCurrentBatch} / 100 Questions Done`;
             document.getElementById('batch-progress-bar').style.width = `${(answeredInCurrentBatch / 100) * 100}%`;
-            
-            if (questionsPool.length === 0) {
-                showCompletionDashboard();
-                return;
-            }
 
             // Always take the first element from array pool queue
             const activeQuestion = questionsPool[0];
@@ -204,9 +214,10 @@
             const currentItem = questionsPool[0];
             const correctAnswerKey = currentItem.ans.trim().toLowerCase();
             
-            // Lock Option Clicks instantly
+            // Lock Option Clicks & Skip instantly
             const options = document.querySelectorAll('.option-card');
             options.forEach(opt => opt.style.pointerEvents = 'none');
+            document.getElementById('skip-btn').disabled = true;
 
             let isCorrect = selectedKey === correctAnswerKey;
             
@@ -258,6 +269,44 @@
             if (answeredInCurrentBatch > 100) answeredInCurrentBatch = 1; // loop resets safely at 100
 
             document.getElementById('next-btn').disabled = false;
+        }
+
+        // 50 Sawaal ek sath skip karne ka system logic
+        function skipFiftyQuestions() {
+            if (questionsPool.length === 0) return;
+
+            // Decide kitne skip karne hain (agar pool mein 50 se kam hain toh saare)
+            const skipCount = Math.min(50, questionsPool.length);
+            
+            if(!resultReportLog.summary.skipped) resultReportLog.summary.skipped = 0;
+
+            for (let i = 0; i < skipCount; i++) {
+                const currentItem = questionsPool[0];
+                
+                // Result object logs populate karein
+                resultReportLog.summary.totalAttempted++;
+                resultReportLog.summary.skipped++;
+                
+                resultReportLog.details.push({
+                    questionNumber: totalQuestionsCount - questionsPool.length + 1,
+                    questionText: currentItem.q,
+                    options: { a: currentItem.a, b: currentItem.b, c: currentItem.c, d: currentItem.d },
+                    userAnswer: "SKIPPED",
+                    correctAnswer: currentItem.ans.trim().toLowerCase(),
+                    status: "SKIPPED",
+                    answeredAt: new Date().toLocaleTimeString()
+                });
+
+                // Array queue se data clear karein
+                questionsPool.shift();
+                
+                // Batch progress index safely badhayein
+                answeredInCurrentBatch++;
+                if (answeredInCurrentBatch > 100) answeredInCurrentBatch = 1;
+            }
+
+            // Loop khatam hote hi screen refresh karein
+            renderQuestionCycle();
         }
 
         function goToNextQuestion() {
