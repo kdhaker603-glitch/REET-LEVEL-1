@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REET Practice Room - Advanced Batch System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen py-6 px-4">
+    <div class="max-w-4xl mx-auto">
+        
+        <!-- Top Nav Dashboard -->
+        <div class="flex justify-between items-center mb-6 bg-slate-800 p-4 rounded-xl shadow-xl border border-slate-700">
+            <button onclick="window.location.href='index.html'" class="text-gray-300 hover:text-emerald-400 font-semibold flex items-center gap-2 transition-colors">
+                <i class="fa-solid fa-arrow-left"></i> Dashboard
+            </button>
+            <h2 id="subject-title" class="text-xl font-bold text-emerald-400">Subject Name</h2>
+            <div class="bg-emerald-500/20 text-emerald-400 text-xs font-bold px-3 py-1.5 rounded-full border border-emerald-500/30" id="counter-badge">Q: 1/50</div>
+        </div>
+
+        <!-- Master Control Center -->
+        <div class="bg-slate-800 p-5 rounded-2xl shadow-xl border border-slate-700 mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+            <div>
+                <div class="flex justify-between text-sm font-medium text-gray-300 mb-2">
+                    <span id="batch-title-text" class="font-bold text-gray-100">Batch 1 (Questions 1 - 50)</span>
+                    <span id="batch-progress-text" class="text-emerald-400 font-semibold">0 / 50 Done</span>
+                </div>
+                <div class="w-full bg-slate-700 rounded-full h-3">
+                    <div id="batch-progress-bar" class="bg-emerald-500 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+            </div>
+            
+            <!-- Quick Action Triggers -->
+            <div class="flex flex-wrap sm:flex-nowrap gap-2 justify-end">
+                <button onclick="downloadProfessionalReport()" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 shadow-lg transition-all active:scale-95">
+                    <i class="fa-solid fa-file-invoice"></i> Download Current Report
+                </button>
+                <button onclick="confirmAndSkipBatch()" class="w-full sm:w-auto bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 shadow-lg transition-all active:scale-95">
+                    <i class="fa-solid fa-angles-right"></i> Skip to Next 50
+                </button>
+            </div>
+        </div>
+
+        <!-- Question Card View -->
+        <div class="bg-slate-800 rounded-2xl shadow-2xl p-6 mb-6 border border-slate-700/70" id="quiz-box">
+            <div class="text-xl font-bold text-white mb-6 leading-relaxed" id="question-text">Loading Question...</div>
+            <div class="space-y-4" id="options-container"></div>
+            <div id="feedback-area" class="mt-6 p-4 rounded-xl hidden font-semibold text-center transition-all duration-200"></div>
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="flex justify-between items-center">
+            <button id="prev-btn" onclick="navQuestion(-1)" class="bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 px-6 rounded-xl transition-all disabled:opacity-40 shadow-md">
+                <i class="fa-solid fa-chevron-left mr-1"></i> Piche
+            </button>
+            <button id="next-btn" onclick="navQuestion(1)" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-md">
+                Agla Prasna <i class="fa-solid fa-chevron-right ml-1"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let currentSubjectId = localStorage.getItem('current_subject_id') || 'evs';
+        let currentSubjectName = localStorage.getItem('current_subject_name') || 'पर्यावरण अध्ययन';
+        
+        let allQuestionsPool = [];
+        let currentBatchIndex = 0; 
+        let currentIndex = 0;      
+        let userAnswers = {}; 
+
+        function cleanStr(str) {
+            if (!str) return "";
+            return str.replace(/^["']|["']$/g, '').trim();
+        }
+
+        function init() {
+            document.getElementById('subject-title').innerText = currentSubjectName;
+            let allData = JSON.parse(localStorage.getItem('reet_questions_pool')) || {};
+            allQuestionsPool = allData[currentSubjectId] || [];
+            
+            currentBatchIndex = 0;
+            currentIndex = 0;
+            userAnswers = {};
+            setupBatch();
+        }
+
+        function setupBatch() {
+            let startNum = (currentBatchIndex * 50) + 1;
+            let endNum = Math.min((currentBatchIndex + 1) * 50, allQuestionsPool.length);
+            
+            document.getElementById('batch-title-text').innerText = `Batch ${currentBatchIndex + 1} (Questions ${startNum} - ${endNum})`;
+            currentIndex = 0;
+            userAnswers = {}; // Clear responses for the fresh active batch sequence
+            
+            loadQuestion();
+            updateProgress();
+        }
+
+        function loadQuestion() {
+            let globalIndex = (currentBatchIndex * 50) + currentIndex;
+            
+            if(allQuestionsPool.length === 0) {
+                document.getElementById('quiz-box').innerHTML = `<p class="text-center text-gray-400 font-bold py-8">Admin Panel se CSV file upload karein!</p>`;
+                return;
+            }
+            if(globalIndex >= allQuestionsPool.length) {
+                document.getElementById('quiz-box').innerHTML = `<p class="text-center text-emerald-400 font-bold py-8"><i class="fa-solid fa-trophy text-4xl block mb-2"></i> 🎉 Badhai ho! Is subject ke saare questions poore ho chuke hain.</p>`;
+                return;
+            }
+
+            const qData = allQuestionsPool[globalIndex];
+            document.getElementById('counter-badge').innerText = `Q: ${currentIndex + 1} / 50 (Total: ${globalIndex + 1}/${allQuestionsPool.length})`;
+            document.getElementById('question-text').innerText = `Q. ${globalIndex + 1}: ${cleanStr(qData.q)}`;
+            
+            const container = document.getElementById('options-container');
+            container.innerHTML = '';
+            
+            const opts = ['a', 'b', 'c', 'd'];
+            opts.forEach(opt => {
+                let displayTxt = cleanStr(qData[opt]);
+                container.innerHTML += `
+                    <button onclick="checkAnswer('${opt}')" id="opt-${opt}" class="w-full text-left p-4 rounded-xl border-2 border-slate-700 bg-slate-800/40 hover:border-emerald-500 hover:bg-slate-700/50 transition-all font-medium flex items-center justify-between text-slate-200">
+                        <span>${opt.toUpperCase()}. ${displayTxt}</span>
+                        <i class="fa-regular fa-circle text-slate-600 text-lg"></i>
+                    </button>
+                `;
+            });
+
+            document.getElementById('feedback-area').classList.add('hidden');
+            if(userAnswers[currentIndex]) {
+                showLockAnswer(userAnswers[currentIndex]);
+            }
+            
+            // Disable button tags based on bounds array length thresholds safely
+            document.getElementById('prev-btn').disabled = (currentIndex === 0);
+        }
+
+        function getNormalizedCorrectAnswer(qData) {
+            let rawAns = cleanStr(qData.ans).toLowerCase();
+            if (['a','b','c','d'].includes(rawAns)) return rawAns;
+            if (rawAns === cleanStr(qData.a).toLowerCase()) return 'a';
+            if (rawAns === cleanStr(qData.b).toLowerCase()) return 'b';
+            if (rawAns === cleanStr(qData.c).toLowerCase()) return 'c';
+            if (rawAns === cleanStr(qData.d).toLowerCase()) return 'd';
+            return 'a';
+        }
+
+        function checkAnswer(selectedOpt) {
+            if(userAnswers[currentIndex]) return;
+            userAnswers[currentIndex] = selectedOpt;
+            showLockAnswer(selectedOpt);
+            updateProgress();
+        }
+
+        function showLockAnswer(selectedOpt) {
+            let globalIndex = (currentBatchIndex * 50) + currentIndex;
+            const qData = allQuestionsPool[globalIndex];
+            const correctOpt = getNormalizedCorrectAnswer(qData);
+            const feedback = document.getElementById('feedback-area');
+            feedback.classList.remove('hidden');
+
+            ['a', 'b', 'c', 'd'].forEach(o => {
+                document.getElementById(`opt-${o}`).className = "w-full text-left p-4 rounded-xl border-2 border-slate-700 text-slate-400 bg-slate-800/20 font-medium flex items-center justify-between";
+            });
+
+            if(selectedOpt === correctOpt) {
+                document.getElementById(`opt-${selectedOpt}`).className = "w-full text-left p-4 rounded-xl border-2 border-emerald-500 bg-emerald-950/40 text-emerald-300 font-medium flex items-center justify-between";
+                feedback.className = "mt-6 p-4 rounded-xl font-semibold text-center bg-emerald-900/30 text-emerald-400 border border-emerald-500/20";
+                feedback.innerHTML = `<i class="fa-solid fa-circle-check"></i> सही उत्तर! बहुत बढ़िया।`;
+            } else {
+                document.getElementById(`opt-${selectedOpt}`).className = "w-full text-left p-4 rounded-xl border-2 border-rose-500 bg-rose-950/40 text-rose-300 font-medium flex items-center justify-between";
+                document.getElementById(`opt-${correctOpt}`).className = "w-full text-left p-4 rounded-xl border-2 border-emerald-500 bg-emerald-950/40 text-emerald-300 font-medium flex items-center justify-between";
+                feedback.className = "mt-6 p-4 rounded-xl font-semibold text-center bg-rose-900/30 text-rose-400 border border-rose-500/20";
+                feedback.innerHTML = `<i class="fa-solid fa-circle-xmark"></i> गलत उत्तर! सही उत्तर विकल्प (${correctOpt.toUpperCase()}) है।`;
+            }
+        }
+
+        function updateProgress() {
+            let answeredCount = Object.keys(userAnswers).length;
+            document.getElementById('batch-progress-text').innerText = `${answeredCount} / 50 Done`;
+            document.getElementById('batch-progress-bar').style.width = `${(answeredCount / 50) * 100}%`;
+        }
+
+        function navQuestion(dir) {
+            let targetIdx = currentIndex + dir;
+            if(targetIdx >= 0 && targetIdx < 50 && ((currentBatchIndex * 50) + targetIdx < allQuestionsPool.length)) {
+                currentIndex = targetIdx;
+                loadQuestion();
+            } else if (targetIdx === 50) {
+                // Auto prompt skip if clicking "Agla" on the 50th question safely
+                confirmAndSkipBatch();
+            }
+        }
+
+        // --- ANYTIME 50 SKIP CONTROL MODULE ---
+        function confirmAndSkipBatch() {
+            if ((currentBatchIndex + 1) * 50 >= allQuestionsPool.length) {
+                alert("Aage Database mein aur batches nahi hain!");
+                return;
+            }
+            if(confirm("💥 Kya aap is 50 Questions ke batch ko skip karke agale batch par jana chahte hain? (Current batch ka unsaved temporary data clear ho jayega)")) {
+                currentBatchIndex++;
+                setupBatch();
+            }
+        }
+
+        // --- HIGHLY PROFESSIONAL REET ANALYSIS EXPORTER SYSTEM ---
+        function downloadProfessionalReport() {
+            let totalAnswered = Object.keys(userAnswers).length;
+            if(totalAnswered === 0) {
+                alert("Aapne is batch mein abhi tak ek bhi sawal hal nahi kiya hai! Report nikalne ke liye kam se kam ek jawab choose karein.");
+                return;
+            }
+
+            let startNum = (currentBatchIndex * 50) + 1;
+            let timeStamp = new Date().toLocaleString('hi-IN');
+            
+            let r = `====================================================================\n`;
+            r += `                 REET LEVEL-1 PREMIUM STUDY ANALYSIS REPORT         \n`;
+            r += `====================================================================\n`;
+            r += ` Generated On : ${timeStamp}\n`;
+            r += ` Subject      : ${currentSubjectName.toUpperCase()}\n`;
+            r += ` Target Batch : Batch #${currentBatchIndex + 1} (Q. Range: ${startNum} - ${startNum + 49})\n`;
+            r += `--------------------------------------------------------------------\n\n`;
+
+            let correctCount = 0;
+            let itemizedDetails = "";
+
+            for(let i = 0; i < 50; i++) {
+                let gIdx = (currentBatchIndex * 50) + i;
+                if(gIdx >= allQuestionsPool.length) break;
+                
+                if(userAnswers[i]) {
+                    let q = allQuestionsPool[gIdx];
+                    let correctOpt = getNormalizedCorrectAnswer(q);
+                    let isCorrect = (userAnswers[i] === correctOpt);
+                    if(isCorrect) correctCount++;
+
+                    itemizedDetails += `[SL NO: ${gIdx + 1}] ${cleanStr(q.q)}\n`;
+                    itemizedDetails += `  (A) ${cleanStr(q.a)}   (B) ${cleanStr(q.b)}   (C) ${cleanStr(q.c)}   (D) ${cleanStr(q.d)}\n`;
+                    itemizedDetails += `  Selected Choice: [ ${userAnswers[i].toUpperCase()} ]  |  Correct Answer: [ ${correctOpt.toUpperCase()} ]\n`;
+                    itemizedDetails += `  Evaluation Outcome: ${isCorrect ? "✅ SUCCESS / CORRECT" : "❌ FAILED / WRONG"}\n`;
+                    itemizedDetails += `--------------------------------------------------------------------\n\n`;
+                }
+            }
+
+            let scorePercent = ((correctCount / totalAnswered) * 100).toFixed(2);
+
+            // Report Header Performance Card Injection Matrix
+            r += `========================= PERFORMANCE CARD =========================\n`;
+            r += ` Total Attempted Questions  : ${totalAnswered} / 50\n`;
+            r += ` Correctly Answered Items   : ${correctCount}\n`;
+            r += ` Incorrect Answers Logged   : ${totalAnswered - correctCount}\n`;
+            r += ` Accuracy Performance Scale : ${scorePercent}%\n`;
+            r += `====================================================================\n\n`;
+            r += `======================= DETAILED ITEM LOGS =========================\n\n`;
+            r += itemizedDetails;
+            r += `\n============= END OF EXAMINATION EVALUATION RECOVERY =============`;
+
+            // Trigger Professional Export Engine Attachment
+            const blob = new Blob([r], { type: 'text/plain;charset=utf-8;' });
+            const anchor = document.createElement('a');
+            let fileSubjectTag = currentSubjectId.toLowerCase();
+            anchor.download = `REET_Report_${fileSubjectTag}_Batch_${currentBatchIndex + 1}.txt`;
+            anchor.href = window.URL.createObjectURL(blob);
+            anchor.click();
+        }
+
+        window.onload = init;
+    </script>
+</body>
+</html>
