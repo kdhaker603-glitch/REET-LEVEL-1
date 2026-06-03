@@ -1,0 +1,1802 @@
+[
+  {
+    "id": 1,
+    "q": "Identify the noun in the sentence: 'The boy is running.'",
+    "a": "running",
+    "b": "boy",
+    "c": "is",
+    "d": "the",
+    "ans": "b"
+  },
+  {
+    "id": 2,
+    "q": "Which of the following is a proper noun?",
+    "a": "City",
+    "b": "Jaipur",
+    "c": "River",
+    "d": "Book",
+    "ans": "b"
+  },
+  {
+    "id": 3,
+    "q": "What is the plural form of the word 'Book'?",
+    "a": "Bookes",
+    "b": "Books",
+    "c": "Bookis",
+    "d": "Bookse",
+    "ans": "b"
+  },
+  {
+    "id": 4,
+    "q": "What is the plural form of the word 'Child'?",
+    "a": "Childs",
+    "b": "Children",
+    "c": "Childrens",
+    "d": "Childes",
+    "ans": "b"
+  },
+  {
+    "id": 5,
+    "q": "Choose the correct pronoun: 'Rahul is a good boy. ____ goes to school daily.'",
+    "a": "She",
+    "b": "He",
+    "c": "It",
+    "d": "They",
+    "ans": "b"
+  },
+  {
+    "id": 6,
+    "q": "Identify the pronoun in the sentence: 'They are playing football.'",
+    "a": "playing",
+    "b": "They",
+    "c": "football",
+    "d": "are",
+    "ans": "b"
+  },
+  {
+    "id": 7,
+    "q": "Identify the adjective in the sentence: 'She has a beautiful doll.'",
+    "a": "has",
+    "b": "beautiful",
+    "c": "doll",
+    "d": "she",
+    "ans": "b"
+  },
+  {
+    "id": 8,
+    "q": "What is the adjective in this sentence? 'He is an honest man.'",
+    "a": "He",
+    "b": "honest",
+    "c": "man",
+    "d": "is",
+    "ans": "b"
+  },
+  {
+    "id": 9,
+    "q": "Identify the verb in the sentence: 'The birds fly in the sky.'",
+    "a": "birds",
+    "b": "fly",
+    "c": "sky",
+    "d": "in",
+    "ans": "b"
+  },
+  {
+    "id": 10,
+    "q": "Complete the sentence with correct verb: 'The sun ____ in the east.'",
+    "a": "rise",
+    "b": "rises",
+    "c": "rising",
+    "d": "rose",
+    "ans": "b"
+  },
+  {
+    "id": 11,
+    "q": "Identify the adverb in the sentence: 'He runs very quickly.'",
+    "a": "runs",
+    "b": "quickly",
+    "c": "he",
+    "d": "very",
+    "ans": "b"
+  },
+  {
+    "id": 12,
+    "q": "Fill in the blank with correct article: 'I saw ____ elephant yesterday.'",
+    "a": "a",
+    "b": "an",
+    "c": "the",
+    "d": "no article",
+    "ans": "b"
+  },
+  {
+    "id": 13,
+    "q": "Fill in the blank with correct article: 'This is ____ useful book.'",
+    "a": "a",
+    "b": "an",
+    "c": "the",
+    "d": "no article",
+    "ans": "a"
+  },
+  {
+    "id": 14,
+    "q": "Fill in the blank with correct article: '____ Taj Mahal is in Agra.'",
+    "a": "A",
+    "b": "An",
+    "c": "The",
+    "d": "No article",
+    "ans": "c"
+  },
+  {
+    "id": 15,
+    "q": "Fill in the blank with correct preposition: 'The cat is sitting ____ the table.'",
+    "a": "in",
+    "b": "under",
+    "c": "between",
+    "d": "into",
+    "ans": "b"
+  },
+  {
+    "id": 16,
+    "q": "Fill in the blank with correct preposition: 'He goes to school ____ bus.'",
+    "a": "with",
+    "b": "by",
+    "c": "on",
+    "d": "at",
+    "ans": "b"
+  },
+  {
+    "id": 17,
+    "q": "Fill in the blank with correct preposition: 'The books are ____ the bag.'",
+    "a": "on",
+    "b": "in",
+    "c": "at",
+    "d": "over",
+    "ans": "b"
+  },
+  {
+    "id": 18,
+    "q": "Choose the correct conjunction: 'He is poor ____ he is honest.'",
+    "a": "or",
+    "b": "but",
+    "c": "so",
+    "d": "because",
+    "ans": "b"
+  },
+  {
+    "id": 19,
+    "q": "Choose the correct conjunction: 'Work hard ____ you will fail.'",
+    "a": "and",
+    "b": "or",
+    "c": "but",
+    "d": "so",
+    "ans": "b"
+  },
+  {
+    "id": 20,
+    "q": "Identify the tense: 'She is writing a letter.'",
+    "a": "Simple Present",
+    "b": "Present Continuous",
+    "c": "Present Perfect",
+    "d": "Simple Past",
+    "ans": "b"
+  },
+  {
+    "id": 21,
+    "q": "Identify the tense: 'He went to market yesterday.'",
+    "a": "Simple Present",
+    "b": "Simple Past",
+    "c": "Past Continuous",
+    "d": "Simple Future",
+    "ans": "b"
+  },
+  {
+    "id": 22,
+    "q": "Complete the sentence: 'They ____ cricket every Sunday.'",
+    "a": "plays",
+    "b": "play",
+    "c": "playing",
+    "d": "played",
+    "ans": "b"
+  },
+  {
+    "id": 23,
+    "q": "Choose the correct negative sentence for: 'He likes tea.'",
+    "a": "He not likes tea.",
+    "b": "He does not like tea.",
+    "c": "He do not like tea.",
+    "d": "He did not like tea.",
+    "ans": "b"
+  },
+  {
+    "id": 24,
+    "q": "Choose the correct question form for: 'She is a doctor.'",
+    "a": "She is a doctor?",
+    "b": "Is she a doctor?",
+    "c": "Does she a doctor?",
+    "d": "Am she a doctor?",
+    "ans": "b"
+  },
+  {
+    "id": 25,
+    "q": "What is the synonym (same meaning) of 'Big'?",
+    "a": "Small",
+    "b": "Large",
+    "c": "Short",
+    "d": "Thin",
+    "ans": "b"
+  },
+  {
+    "id": 26,
+    "q": "What is the synonym of the word 'Beautiful'?",
+    "a": "Ugly",
+    "b": "Pretty",
+    "c": "Dirty",
+    "d": "Bad",
+    "ans": "b"
+  },
+  {
+    "id": 27,
+    "q": "What is the antonym (opposite meaning) of 'Happy'?",
+    "a": "Joyful",
+    "b": "Sad",
+    "c": "Angry",
+    "d": "Good",
+    "ans": "b"
+  },
+  {
+    "id": 28,
+    "q": "What is the antonym of the word 'Hot'?",
+    "a": "Warm",
+    "b": "Cold",
+    "c": "Dry",
+    "d": "Ice",
+    "ans": "b"
+  },
+  {
+    "id": 29,
+    "q": "Find the correctly spelled word:",
+    "a": "Recieve",
+    "b": "Receive",
+    "c": "Receve",
+    "d": "Recive",
+    "ans": "b"
+  },
+  {
+    "id": 30,
+    "q": "Find the correctly spelled word:",
+    "a": "Beautiful",
+    "b": "Beautifull",
+    "c": "Beatiful",
+    "d": "Bautifull",
+    "ans": "a"
+  },
+  {
+    "id": 31,
+    "q": "Which model auxiliary shows ability?",
+    "a": "Must",
+    "b": "Can",
+    "c": "May",
+    "d": "Should",
+    "ans": "b"
+  },
+  {
+    "id": 32,
+    "q": "Fill in the blank for permission: '____ I come in, sir?'",
+    "a": "Can",
+    "b": "May",
+    "c": "Must",
+    "d": "Should",
+    "ans": "b"
+  },
+  {
+    "id": 33,
+    "q": "Fill in the blank for advice: 'You ____ respect your teachers.'",
+    "a": "can",
+    "b": "should",
+    "c": "may",
+    "d": "might",
+    "ans": "b"
+  },
+  {
+    "id": 34,
+    "q": "Identify the silent letter in the word 'Walk':",
+    "a": "W",
+    "b": "l",
+    "c": "k",
+    "d": "a",
+    "ans": "b"
+  },
+  {
+    "id": 35,
+    "q": "Identify the silent letter in the word 'Know':",
+    "a": "K",
+    "b": "n",
+    "c": "o",
+    "d": "w",
+    "ans": "a"
+  },
+  {
+    "id": 36,
+    "q": "What is a group of words that makes complete sense called?",
+    "a": "Letter",
+    "b": "Sentence",
+    "c": "Phrase",
+    "d": "Word",
+    "ans": "b"
+  },
+  {
+    "id": 37,
+    "q": "What type of sentence is this? 'What is your name?'",
+    "a": "Assertive",
+    "b": "Interrogative",
+    "c": "Imperative",
+    "d": "Exclamatory",
+    "ans": "b"
+  },
+  {
+    "id": 38,
+    "q": "What type of sentence is this? 'Please close the door.'",
+    "a": "Declarative",
+    "b": "Imperative",
+    "c": "Interrogative",
+    "d": "Exclamatory",
+    "ans": "b"
+  },
+  {
+    "id": 39,
+    "q": "How many basic language skills are there?",
+    "a": "Two",
+    "b": "Four",
+    "c": "Three",
+    "d": "Five",
+    "ans": "b"
+  },
+  {
+    "id": 40,
+    "q": "What is the correct sequence of language skills?",
+    "a": "L-W-R-S",
+    "b": "L-S-R-W",
+    "c": "L-R-S-W",
+    "d": "S-L-R-W",
+    "ans": "b"
+  },
+  {
+    "id": 41,
+    "q": "Which of the following are 'Productive skills'?",
+    "a": "Listening and Reading",
+    "b": "Speaking and Writing",
+    "c": "Listening and Speaking",
+    "d": "Reading and Writing",
+    "ans": "b"
+  },
+  {
+    "id": 42,
+    "q": "Which of the following are 'Receptive skills'?",
+    "a": "Speaking and Writing",
+    "b": "Listening and Reading",
+    "c": "Listening and Speaking",
+    "d": "Reading and Writing",
+    "ans": "b"
+  },
+  {
+    "id": 43,
+    "q": "What does CCE stand for in education?",
+    "a": "Continuous and Complete Evaluation",
+    "b": "Continuous and Comprehensive Evaluation",
+    "c": "Correct and Clear Evaluation",
+    "d": "Compulsory Child Education",
+    "ans": "b"
+  },
+  {
+    "id": 44,
+    "q": "Remedial teaching is done for which students?",
+    "a": "Bright students",
+    "b": "Slow learners / weak students",
+    "c": "All students",
+    "d": "Rich students",
+    "ans": "b"
+  },
+  {
+    "id": 45,
+    "q": "What is the main aim of teaching English in India?",
+    "a": "Only to pass exams",
+    "b": "To enable effective communication",
+    "c": "To learn grammar rules by heart",
+    "d": "To become a poet",
+    "ans": "b"
+  },
+  {
+    "id": 46,
+    "q": "Which tool is an audio-visual aid?",
+    "a": "Radio",
+    "b": "Television",
+    "c": "Blackboard",
+    "d": "Textbook",
+    "ans": "b"
+  },
+  {
+    "id": 47,
+    "q": "Which of the following is a pure 'Visual aid'?",
+    "a": "Tape recorder",
+    "b": "Chalkboard / Blackboard",
+    "c": "Television",
+    "d": "Computer",
+    "ans": "b"
+  },
+  {
+    "id": 48,
+    "q": "In English alphabet, how many vowel letters are there?",
+    "a": "21",
+    "b": "5",
+    "c": "26",
+    "d": "12",
+    "ans": "b"
+  },
+  {
+    "id": 49,
+    "q": "How many consonant letters are there in the English alphabet?",
+    "a": "5",
+    "b": "21",
+    "c": "26",
+    "d": "24",
+    "ans": "b"
+  },
+  {
+    "id": 50,
+    "q": "How many total vowel sounds are there in English phonetics?",
+    "a": "5",
+    "b": "20",
+    "c": "24",
+    "d": "44",
+    "ans": "b"
+  },
+  {
+    "id": 51,
+    "q": "How many total consonant sounds are there in English?",
+    "a": "21",
+    "b": "24",
+    "c": "20",
+    "d": "44",
+    "ans": "b"
+  },
+  {
+    "id": 52,
+    "q": "What is the total number of sounds in English?",
+    "a": "26",
+    "b": "44",
+    "c": "24",
+    "d": "20",
+    "ans": "b"
+  },
+  {
+    "id": 53,
+    "q": "Which method is also known as the Classical Method of teaching English?",
+    "a": "Direct Method",
+    "b": "Grammar-Translation Method",
+    "c": "Bilingual Method",
+    "d": "Audio-Lingual Method",
+    "ans": "b"
+  },
+  {
+    "id": 54,
+    "q": "In which method, mother tongue is completely banned?",
+    "a": "Grammar-Translation Method",
+    "b": "Direct Method",
+    "c": "Bilingual Method",
+    "d": "Structural Approach",
+    "ans": "b"
+  },
+  {
+    "id": 55,
+    "q": "What is the unit of teaching in the Direct Method?",
+    "a": "Word",
+    "b": "Sentence",
+    "c": "Letter",
+    "d": "Paragraph",
+    "ans": "b"
+  },
+  {
+    "id": 56,
+    "q": "What is the unit of teaching in the Grammar-Translation Method?",
+    "a": "Sentence",
+    "b": "Word",
+    "c": "Letter",
+    "d": "Phrase",
+    "ans": "b"
+  },
+  {
+    "id": 57,
+    "q": "Who developed the Bilingual Method?",
+    "a": "Dr. West",
+    "b": "C.J. Dodson",
+    "c": "Fries",
+    "d": "Sweet",
+    "ans": "b"
+  },
+  {
+    "id": 58,
+    "q": "Identify the feminine gender of 'King':",
+    "a": "Princess",
+    "b": "Queen",
+    "c": "Girl",
+    "d": "Woman",
+    "ans": "b"
+  },
+  {
+    "id": 59,
+    "q": "Identify the masculine gender of 'Cow':",
+    "a": "Ox / Bull",
+    "b": "Horse",
+    "c": "Dog",
+    "d": "Lion",
+    "ans": "a"
+  },
+  {
+    "id": 60,
+    "q": "Choose the correctly punctuated sentence:",
+    "a": "where do you live",
+    "b": "Where do you live?",
+    "c": "Where do you live.",
+    "d": "where do you live!",
+    "ans": "b"
+  },
+  {
+    "id": 61,
+    "q": "Find the odd one out from the options:",
+    "a": "Pen",
+    "b": "Pencil",
+    "c": "Eraser",
+    "d": "Water",
+    "ans": "d"
+  },
+  {
+    "id": 62,
+    "q": "Complete the idiom: 'An apple a day keeps the ____ away.'",
+    "a": "teacher",
+    "b": "doctor",
+    "c": "friend",
+    "d": "monkey",
+    "ans": "b"
+  },
+  {
+    "id": 63,
+    "q": "What is the past form of the verb 'Go'?",
+    "a": "Gone",
+    "b": "Went",
+    "c": "Goes",
+    "d": "Going",
+    "ans": "b"
+  },
+  {
+    "id": 64,
+    "q": "What is the past participle (V3) form of 'Eat'?",
+    "a": "Ate",
+    "b": "Eaten",
+    "c": "Eats",
+    "d": "Eating",
+    "ans": "b"
+  },
+  {
+    "id": 65,
+    "q": "Identify the linking device: 'She worked hard, ____ she passed.'",
+    "a": "but",
+    "b": "therefore / so",
+    "c": "because",
+    "d": "or",
+    "ans": "b"
+  },
+  {
+    "id": 66,
+    "q": "Which is a subject pronoun?",
+    "a": "Me",
+    "b": "I",
+    "c": "Him",
+    "d": "Them",
+    "ans": "b"
+  },
+  {
+    "id": 67,
+    "q": "Which is an object pronoun?",
+    "a": "He",
+    "b": "Me",
+    "c": "She",
+    "d": "They",
+    "ans": "b"
+  },
+  {
+    "id": 68,
+    "q": "Identify the type of noun for 'Gold':",
+    "a": "Proper Noun",
+    "b": "Material Noun",
+    "c": "Abstract Noun",
+    "d": "Collective Noun",
+    "ans": "b"
+  },
+  {
+    "id": 69,
+    "q": "Identify the type of noun for 'Honesty':",
+    "a": "Common Noun",
+    "b": "Abstract Noun",
+    "c": "Material Noun",
+    "d": "Proper Noun",
+    "ans": "b"
+  },
+  {
+    "id": 70,
+    "q": "What is the collective noun for a group of keys?",
+    "a": "Herd",
+    "b": "Bunch",
+    "c": "Team",
+    "d": "Pack",
+    "ans": "b"
+  },
+  {
+    "id": 71,
+    "q": "What is the collective noun for a group of players?",
+    "a": "Class",
+    "b": "Team",
+    "c": "Crowd",
+    "d": "Flock",
+    "ans": "b"
+  },
+  {
+    "id": 72,
+    "q": "Choose the correct spelling:",
+    "a": "Tomorow",
+    "b": "Tomorrow",
+    "c": "Toomorrow",
+    "d": "Tommorow",
+    "ans": "b"
+  },
+  {
+    "id": 73,
+    "q": "Choose the correct spelling:",
+    "a": "Grammer",
+    "b": "Grammar",
+    "c": "Gramer",
+    "d": "Gramar",
+    "ans": "b"
+  },
+  {
+    "id": 74,
+    "q": "Fill in the blank with correct article: 'He is ____ honest officer.'",
+    "a": "a",
+    "b": "an",
+    "c": "the",
+    "d": "no article",
+    "ans": "b"
+  },
+  {
+    "id": 75,
+    "q": "Fill in the blank: 'He is afraid ____ dogs.'",
+    "a": "with",
+    "b": "of",
+    "c": "by",
+    "d": "at",
+    "ans": "b"
+  },
+  {
+    "id": 76,
+    "q": "Fill in the blank: 'Look ____ the blackboard.'",
+    "a": "in",
+    "b": "at",
+    "c": "on",
+    "d": "to",
+    "ans": "b"
+  },
+  {
+    "id": 77,
+    "q": "What is the antonym of 'True'?",
+    "a": "Right",
+    "b": "False",
+    "c": "Correct",
+    "d": "Good",
+    "ans": "b"
+  },
+  {
+    "id": 78,
+    "q": "What is the synonym of 'Fast'?",
+    "a": "Slow",
+    "b": "Quick",
+    "c": "Heavy",
+    "d": "Easy",
+    "ans": "b"
+  },
+  {
+    "id": 79,
+    "q": "Identify the interrogative word used for a place:",
+    "a": "When",
+    "b": "Where",
+    "c": "Who",
+    "d": "Why",
+    "ans": "b"
+  },
+  {
+    "id": 80,
+    "q": "Identify the interrogative word used for time:",
+    "a": "Where",
+    "b": "When",
+    "c": "What",
+    "d": "Which",
+    "ans": "b"
+  },
+  {
+    "id": 81,
+    "q": "Continuous evaluation helps to find out changes in what aspect of students?",
+    "a": "Economic status",
+    "b": "Learning behavior and progress",
+    "c": "Family background",
+    "d": "Physical height",
+    "ans": "b"
+  },
+  {
+    "id": 82,
+    "q": "What is the primary skill in language learning?",
+    "a": "Writing",
+    "b": "Listening",
+    "c": "Reading",
+    "d": "Speaking",
+    "ans": "b"
+  },
+  {
+    "id": 83,
+    "q": "What is the final skill in language learning?",
+    "a": "Listening",
+    "b": "Writing",
+    "c": "Reading",
+    "d": "Speaking",
+    "ans": "b"
+  },
+  {
+    "id": 84,
+    "q": "Which text resource is most widely used in Indian classrooms?",
+    "a": "Computer",
+    "b": "Textbook",
+    "c": "Radio",
+    "d": "Projector",
+    "ans": "b"
+  },
+  {
+    "id": 85,
+    "q": "Diagnostic testing in English helps to find out ____.",
+    "a": "Rank of the student",
+    "b": "Gaps/weaknesses in student's learning",
+    "c": "Total fees paid",
+    "d": "Student's attendance",
+    "ans": "b"
+  },
+  {
+    "id": 86,
+    "q": "A teacher speaks and students write down the words. What is this activity called?",
+    "a": "Reading",
+    "b": "Dictation",
+    "c": "Speaking",
+    "d": "Translation",
+    "ans": "b"
+  },
+  {
+    "id": 87,
+    "q": "Which part of speech describes a noun?",
+    "a": "Verb",
+    "b": "Adjective",
+    "c": "Adverb",
+    "d": "Pronoun",
+    "ans": "b"
+  },
+  {
+    "id": 88,
+    "q": "Which part of speech shows an action?",
+    "a": "Noun",
+    "b": "Verb",
+    "c": "Adjective",
+    "d": "Preposition",
+    "ans": "b"
+  },
+  {
+    "id": 89,
+    "q": "What is the singular form of 'Teeth'?",
+    "a": "Teeths",
+    "b": "Tooth",
+    "c": "Toothes",
+    "d": "Teeth",
+    "ans": "b"
+  },
+  {
+    "id": 90,
+    "q": "What is the singular form of 'Mice'?",
+    "a": "Mices",
+    "b": "Mouse",
+    "c": "Mousie",
+    "d": "Mice",
+    "ans": "b"
+  },
+  {
+    "id": 91,
+    "q": "Choose the correct helping verb: 'I ____ writing a story now.'",
+    "a": "is",
+    "b": "am",
+    "c": "are",
+    "d": "was",
+    "ans": "b"
+  },
+  {
+    "id": 92,
+    "q": "Choose the correct helping verb: 'They ____ football yesterday.'",
+    "a": "are playing",
+    "b": "were playing",
+    "c": "is playing",
+    "d": "am playing",
+    "ans": "b"
+  },
+  {
+    "id": 93,
+    "q": "Which of these is a greeting word?",
+    "a": "Goodbye",
+    "b": "Hello",
+    "c": "Thank you",
+    "d": "Please",
+    "ans": "b"
+  },
+  {
+    "id": 94,
+    "q": "Complete the phrase: '____ up early in the morning.'",
+    "a": "Sleep",
+    "b": "Wake",
+    "c": "Run",
+    "d": "Sit",
+    "ans": "b"
+  },
+  {
+    "id": 95,
+    "q": "Identify the silent letter in the word 'Hour':",
+    "a": "o",
+    "b": "H",
+    "c": "u",
+    "d": "r",
+    "ans": "b"
+  },
+  {
+    "id": 96,
+    "q": "Identify the silent letter in the word 'Knife':",
+    "a": "n",
+    "b": "K",
+    "c": "i",
+    "d": "f",
+    "ans": "b"
+  },
+  {
+    "id": 97,
+    "q": "What is the opposite of 'Dark'?",
+    "a": "Black",
+    "b": "Light",
+    "c": "Night",
+    "d": "Dim",
+    "ans": "b"
+  },
+  {
+    "id": 98,
+    "q": "What is the opposite of 'Heavy'?",
+    "a": "Hard",
+    "b": "Light",
+    "c": "Fat",
+    "d": "Big",
+    "ans": "b"
+  },
+  {
+    "id": 99,
+    "q": "What type of evaluation is conducted at the very end of a course?",
+    "a": "Formative Evaluation",
+    "b": "Summative Evaluation",
+    "c": "Diagnostic Evaluation",
+    "d": "Continuous Evaluation",
+    "ans": "b"
+  },
+  {
+    "id": 100,
+    "q": "Communicative Language Teaching (CLT) mainly focuses on ____.",
+    "a": "Grammar rules structure",
+    "b": "Language use in real-life communication",
+    "c": "Translation of sentences",
+    "d": "Rote learning",
+    "ans": "b"
+  },
+  {
+    "id": 101,
+    "q": "Identify the type of noun for 'Family':",
+    "a": "Proper Noun",
+    "b": "Collective Noun",
+    "c": "Abstract Noun",
+    "d": "Material Noun",
+    "ans": "b"
+  },
+  {
+    "id": 102,
+    "q": "What is the feminine gender of 'Actor'?",
+    "a": "Actoress",
+    "b": "Actress",
+    "c": "Action",
+    "d": "Lady actor",
+    "ans": "b"
+  },
+  {
+    "id": 103,
+    "q": "What is the masculine gender of 'Niece'?",
+    "a": "Nephew",
+    "b": "Brother",
+    "c": "Uncle",
+    "d": "Son",
+    "ans": "a"
+  },
+  {
+    "id": 104,
+    "q": "Choose the correct pronoun: 'The dog is barking. ____ is hungry.'",
+    "a": "He",
+    "b": "It",
+    "c": "They",
+    "d": "She",
+    "ans": "b"
+  },
+  {
+    "id": 105,
+    "q": "Identify the adjective in: 'This is a sharp knife.'",
+    "a": "knife",
+    "b": "sharp",
+    "c": "is",
+    "d": "this",
+    "ans": "b"
+  },
+  {
+    "id": 106,
+    "q": "What is the comparative degree of the adjective 'Good'?",
+    "a": "Gooder",
+    "b": "Better",
+    "c": "Best",
+    "d": "More good",
+    "ans": "b"
+  },
+  {
+    "id": 107,
+    "q": "What is the superlative degree of the adjective 'Tall'?",
+    "a": "Taller",
+    "b": "Tallest",
+    "c": "More tall",
+    "d": "Most tall",
+    "ans": "b"
+  },
+  {
+    "id": 108,
+    "q": "Fill in the blank: 'Iron is ____ than gold.'",
+    "a": "heavy",
+    "b": "heavier",
+    "c": "heaviest",
+    "d": "more heavy",
+    "ans": "b"
+  },
+  {
+    "id": 109,
+    "q": "Identify the verb in: 'He cooked delicious food.'",
+    "a": "delicious",
+    "b": "cooked",
+    "c": "food",
+    "d": "he",
+    "ans": "b"
+  },
+  {
+    "id": 110,
+    "q": "Complete the sentence: 'Water ____ at 100 degrees Celsius.'",
+    "a": "boil",
+    "b": "boils",
+    "c": "boiling",
+    "d": "boiled",
+    "ans": "b"
+  },
+  {
+    "id": 111,
+    "q": "Identify the adverb in: 'The old man walked slowly.'",
+    "a": "old",
+    "b": "slowly",
+    "c": "walked",
+    "d": "man",
+    "ans": "b"
+  },
+  {
+    "id": 112,
+    "q": "Fill in the blank: 'He usually wakes up ____ 5 o'clock.'",
+    "a": "on",
+    "b": "at",
+    "c": "in",
+    "d": "to",
+    "ans": "b"
+  },
+  {
+    "id": 113,
+    "q": "Fill in the blank: 'The train passed ____ the tunnel.'",
+    "a": "at",
+    "b": "through",
+    "c": "on",
+    "d": "by",
+    "ans": "b"
+  },
+  {
+    "id": 114,
+    "q": "Fill in the blank: 'He was born ____ 15th August.'",
+    "a": "at",
+    "b": "on",
+    "c": "in",
+    "d": "for",
+    "ans": "b"
+  },
+  {
+    "id": 115,
+    "q": "Choose the correct conjunction: 'He failed ____ he did not study.'",
+    "a": "but",
+    "b": "because",
+    "c": "so",
+    "d": "or",
+    "ans": "b"
+  },
+  {
+    "id": 116,
+    "q": "Choose the correct conjunction: 'Take an umbrella ____ it may rain.'",
+    "a": "but",
+    "b": "as / because",
+    "c": "so",
+    "d": "till",
+    "ans": "b"
+  },
+  {
+    "id": 117,
+    "q": "Fill in the blank with article: 'Copper is ____ useful metal.'",
+    "a": "an",
+    "b": "a",
+    "c": "the",
+    "d": "no article",
+    "ans": "b"
+  },
+  {
+    "id": 118,
+    "q": "Fill in the blank with article: 'He is ____ highest paid player.'",
+    "a": "a",
+    "b": "the",
+    "c": "an",
+    "d": "no article",
+    "ans": "b"
+  },
+  {
+    "id": 119,
+    "q": "Fill in the blank with article: 'I read ____ Holy Quran daily.'",
+    "a": "a",
+    "b": "the",
+    "c": "an",
+    "d": "no article",
+    "ans": "b"
+  },
+  {
+    "id": 120,
+    "q": "Identify the tense: 'They have finished their homework.'",
+    "a": "Simple Present",
+    "b": "Present Perfect",
+    "c": "Present Continuous",
+    "d": "Simple Past",
+    "ans": "b"
+  },
+  {
+    "id": 121,
+    "q": "Identify the tense: 'I will meet you tomorrow.'",
+    "a": "Simple Present",
+    "b": "Simple Future",
+    "c": "Future Continuous",
+    "d": "Simple Past",
+    "ans": "b"
+  },
+  {
+    "id": 122,
+    "q": "Change into a negative sentence: 'She speaks English.'",
+    "a": "She not speaks English.",
+    "b": "She does not speak English.",
+    "c": "She do not speak English.",
+    "d": "She did not speak English.",
+    "ans": "b"
+  },
+  {
+    "id": 123,
+    "q": "Choose the correct interrogative sentence: 'They play hockey.'",
+    "a": "Do they play hockey?",
+    "b": "Does they play hockey?",
+    "c": "Are they play hockey?",
+    "d": "Did they play hockey?",
+    "ans": "a"
+  },
+  {
+    "id": 124,
+    "q": "What is the synonym of 'Difficult'?",
+    "a": "Easy",
+    "b": "Hard",
+    "c": "Simple",
+    "d": "Soft",
+    "ans": "b"
+  },
+  {
+    "id": 125,
+    "q": "What is the synonym of 'Begin'?",
+    "a": "Stop",
+    "b": "Start",
+    "c": "End",
+    "d": "Close",
+    "ans": "b"
+  },
+  {
+    "id": 126,
+    "q": "What is the antonym of 'Rich'?",
+    "a": "Poor",
+    "b": "Wealthy",
+    "c": "Kind",
+    "d": "Happy",
+    "ans": "a"
+  },
+  {
+    "id": 127,
+    "q": "What is the antonym of 'Beautiful'?",
+    "a": "Pretty",
+    "b": "Ugly",
+    "c": "Nice",
+    "d": "Clean",
+    "ans": "b"
+  },
+  {
+    "id": 128,
+    "q": "Find the correctly spelled word:",
+    "a": "Business",
+    "b": "Bussiness",
+    "c": "Busines",
+    "d": "Bizness",
+    "ans": "a"
+  },
+  {
+    "id": 129,
+    "q": "Find the correctly spelled word:",
+    "a": "Committee",
+    "b": "Comitee",
+    "c": "Committe",
+    "d": "Commitee",
+    "ans": "a"
+  },
+  {
+    "id": 130,
+    "q": "Which modal auxiliary shows strong obligation or compulsion?",
+    "a": "Can",
+    "b": "Must",
+    "c": "May",
+    "d": "Could",
+    "ans": "b"
+  },
+  {
+    "id": 131,
+    "q": "Fill in the blank for possibility: 'It is cloudy today. It ____ rain.'",
+    "a": "must",
+    "b": "may",
+    "c": "can",
+    "d": "should",
+    "ans": "b"
+  },
+  {
+    "id": 132,
+    "q": "Fill in the blank: '____ you please lend me your pen?'",
+    "a": "Should",
+    "b": "Would / Could",
+    "c": "Must",
+    "d": "Might",
+    "ans": "b"
+  },
+  {
+    "id": 133,
+    "q": "Identify the silent letter in 'Honor':",
+    "a": "o",
+    "b": "H",
+    "c": "n",
+    "d": "r",
+    "ans": "b"
+  },
+  {
+    "id": 134,
+    "q": "Identify the silent letter in 'Wrong':",
+    "a": "r",
+    "b": "W",
+    "c": "o",
+    "d": "g",
+    "ans": "b"
+  },
+  {
+    "id": 135,
+    "q": "What type of sentence is this? 'Alas! We lost the match.'",
+    "a": "Assertive",
+    "b": "Exclamatory",
+    "c": "Imperative",
+    "d": "Interrogative",
+    "ans": "b"
+  },
+  {
+    "id": 136,
+    "q": "What type of sentence is this? 'Honesty is the best policy.'",
+    "a": "Imperative",
+    "b": "Assertive / Declarative",
+    "c": "Exclamatory",
+    "d": "Optative",
+    "ans": "b"
+  },
+  {
+    "id": 137,
+    "q": "The passive voice of 'He sings a song' is:",
+    "a": "A song was sung by him.",
+    "b": "A song is sung by him.",
+    "c": "A song is singed by him.",
+    "d": "A song has sung by him.",
+    "ans": "b"
+  },
+  {
+    "id": 138,
+    "q": "The passive voice of 'Ram killed a snake' is:",
+    "a": "A snake is killed by Ram.",
+    "b": "A snake was killed by Ram.",
+    "c": "A snake was kill by Ram.",
+    "d": "A snake had killed by Ram.",
+    "ans": "b"
+  },
+  {
+    "id": 139,
+    "q": "The passive voice of 'She is making tea' is:",
+    "a": "Tea is made by her.",
+    "b": "Tea is being made by her.",
+    "c": "Tea was being made by her.",
+    "d": "Tea is been made by her.",
+    "ans": "b"
+  },
+  {
+    "id": 140,
+    "q": "Change into Indirect Speech: 'He said, \"I am busy.\"'",
+    "a": "He said that I am busy.",
+    "b": "He said that he was busy.",
+    "c": "He said that he is busy.",
+    "d": "He told that he was busy.",
+    "ans": "b"
+  },
+  {
+    "id": 141,
+    "q": "Change into Indirect Speech: 'She said to me, \"What is your name?\"'",
+    "a": "She told me what my name was.",
+    "b": "She asked me what my name was.",
+    "c": "She asked me what is your name.",
+    "d": "She asked to me my name.",
+    "ans": "b"
+  },
+  {
+    "id": 142,
+    "q": "What is the phonetic symbol for the underlined sound in '<u>c</u>at'?",
+    "a": "/s/",
+    "b": "/k/",
+    "c": "/g/",
+    "d": "/t/",
+    "ans": "b"
+  },
+  {
+    "id": 143,
+    "q": "What is the phonetic symbol for the vowel sound in 's<u>i</u>t'?",
+    "a": "/i:/",
+    "b": "/ɪ/",
+    "c": "/e/",
+    "d": "/æ/",
+    "ans": "b"
+  },
+  {
+    "id": 144,
+    "q": "Which of the following words ends with a /z/ sound?",
+    "a": "Cats",
+    "b": "Bags",
+    "c": "Books",
+    "d": "Caps",
+    "ans": "b"
+  },
+  {
+    "id": 145,
+    "q": "A speech sound produced without any obstruction of air is called:",
+    "a": "Consonant sound",
+    "b": "Vowel sound",
+    "c": "Diphthong",
+    "d": "Plosive",
+    "ans": "b"
+  },
+  {
+    "id": 146,
+    "q": "What are two vowel sounds combined in a single syllable called?",
+    "a": "Monophthongs",
+    "b": "Diphthongs",
+    "c": "Consonants",
+    "d": "Triphthongs",
+    "ans": "b"
+  },
+  {
+    "id": 147,
+    "q": "How many Monophthongs (pure vowels) are there in English?",
+    "a": "5",
+    "b": "12",
+    "c": "8",
+    "d": "20",
+    "ans": "b"
+  },
+  {
+    "id": 148,
+    "q": "How many Diphthongs (vowel glides) are there in English?",
+    "a": "5",
+    "b": "8",
+    "c": "12",
+    "d": "20",
+    "ans": "b"
+  },
+  {
+    "id": 149,
+    "q": "In which method translation of everything into mother tongue is necessary?",
+    "a": "Direct Method",
+    "b": "Grammar-Translation Method",
+    "c": "CLT",
+    "d": "Bilingual Method",
+    "ans": "b"
+  },
+  {
+    "id": 150,
+    "q": "The Grammar-Translation Method focuses mainly on which skills?",
+    "a": "Listening and Speaking",
+    "b": "Reading and Writing",
+    "c": "Speaking and Writing",
+    "d": "Listening and Reading",
+    "ans": "b"
+  },
+  {
+    "id": 151,
+    "q": "Which method is the opposite of the Grammar-Translation Method?",
+    "a": "Structural Approach",
+    "b": "Direct Method",
+    "c": "Bilingual Method",
+    "d": "Audio-Lingual Method",
+    "ans": "b"
+  },
+  {
+    "id": 152,
+    "q": "In the Bilingual Method, who is allowed to use the mother tongue?",
+    "a": "Students only",
+    "b": "Teacher only",
+    "c": "Both teacher and students",
+    "d": "None of them",
+    "ans": "b"
+  },
+  {
+    "id": 153,
+    "q": "What is the main unit of teaching in the Communicative Language Teaching (CLT)?",
+    "a": "Word",
+    "b": "Sentence / Context",
+    "c": "Letter",
+    "d": "Rule",
+    "ans": "b"
+  },
+  {
+    "id": 154,
+    "q": "CLT emphasizes on developing which type of competence?",
+    "a": "Linguistic competence",
+    "b": "Communicative competence",
+    "c": "Grammar competence",
+    "d": "Writing competence",
+    "ans": "b"
+  },
+  {
+    "id": 155,
+    "q": "In a child-centered English classroom, who is the active participant?",
+    "a": "The Principal",
+    "b": "The Learner / Child",
+    "c": "The Teacher",
+    "d": "The Textbook",
+    "ans": "b"
+  },
+  {
+    "id": 156,
+    "q": "What is the role of a teacher in CLT?",
+    "a": "Dictator",
+    "b": "Facilitator and Guide",
+    "c": "Speaker only",
+    "d": "Examiner",
+    "ans": "b"
+  },
+  {
+    "id": 157,
+    "q": "Which language skill is evaluated by reading a loud paragraph?",
+    "a": "Listening",
+    "b": "Speaking / Pronunciation",
+    "c": "Writing",
+    "d": "Silent reading",
+    "ans": "b"
+  },
+  {
+    "id": 158,
+    "q": "Reading for get the main idea of a passage quickly is called:",
+    "a": "Scanning",
+    "b": "Skimming",
+    "c": "Intensive reading",
+    "d": "Loud reading",
+    "ans": "b"
+  },
+  {
+    "id": 159,
+    "q": "Reading to find a specific piece of information (like a phone number) is called:",
+    "a": "Skimming",
+    "b": "Scanning",
+    "c": "Extensive reading",
+    "d": "Loud reading",
+    "ans": "b"
+  },
+  {
+    "id": 160,
+    "q": "What type of test is conducted to find out a student's specific learning difficulties?",
+    "a": "Achievement Test",
+    "b": "Diagnostic Test",
+    "c": "Aptitude Test",
+    "d": "Proficiency Test",
+    "ans": "b"
+  },
+  {
+    "id": 161,
+    "q": "Remedial teaching should be organized after which test?",
+    "a": "Unit test",
+    "b": "Diagnostic test",
+    "c": "Final exam",
+    "d": "Medical test",
+    "ans": "b"
+  },
+  {
+    "id": 162,
+    "q": "What is the primary objective of Remedial Teaching?",
+    "a": "To re-teach the whole syllabus",
+    "b": "To eliminate learning gaps and errors",
+    "c": "To punish lazy students",
+    "d": "To give home work",
+    "ans": "b"
+  },
+  {
+    "id": 163,
+    "q": "'Comprehensive' in CCE stands for evaluation of:",
+    "a": "Only Scholastic (Academic) aspects",
+    "b": "Both Scholastic and Co-scholastic aspects",
+    "c": "Only Co-scholastic aspects",
+    "d": "Health aspects only",
+    "ans": "b"
+  },
+  {
+    "id": 164,
+    "q": "Evaluation done during the teaching-learning process is called:",
+    "a": "Summative Evaluation",
+    "b": "Formative Evaluation",
+    "c": "Term-end Evaluation",
+    "d": "Final Evaluation",
+    "ans": "b"
+  },
+  {
+    "id": 165,
+    "q": "Which of the following is a tool for Formative Assessment?",
+    "a": "Annual Exams",
+    "b": "Quizzes / Oral Questions",
+    "c": "Board Exams",
+    "d": "Half-yearly Exams",
+    "ans": "b"
+  },
+  {
+    "id": 166,
+    "q": "A good test must measure what it claims to measure. This quality is called:",
+    "a": "Reliability",
+    "b": "Validity",
+    "c": "Objectivity",
+    "d": "Utility",
+    "ans": "b"
+  },
+  {
+    "id": 167,
+    "q": "If a test gives the same result when evaluated by different examiners, it is called:",
+    "a": "Validity",
+    "b": "Objectivity",
+    "c": "Reliability",
+    "d": "Subjectivity",
+    "ans": "b"
+  },
+  {
+    "id": 168,
+    "q": "Which teaching aid helps in correct pronunciation and listening practice?",
+    "a": "Blackboard",
+    "b": "Linguaphone / Audio Tape",
+    "c": "Textbook",
+    "d": "Flashcards",
+    "ans": "b"
+  },
+  {
+    "id": 169,
+    "q": "Which of the following is an example of an authentic material in English class?",
+    "a": "English Newspaper / Menu card",
+    "b": "Grammar rule book",
+    "c": "Translation guide",
+    "d": "Copybook",
+    "ans": "a"
+  },
+  {
+    "id": 170,
+    "q": "Errors made by young learners during language acquisition should be treated as:",
+    "a": "Signs of failure",
+    "b": "Natural indicators of learning",
+    "c": "A matter of serious discipline",
+    "d": "Bad habits",
+    "ans": "b"
+  },
+  {
+    "id": 171,
+    "q": "What is the full form of TLM in teaching?",
+    "a": "Teacher Learning Method",
+    "b": "Teaching Learning Material",
+    "c": "Test and Lesson Management",
+    "d": "Time Limit Measurement",
+    "ans": "b"
+  },
+  {
+    "id": 172,
+    "q": "Complete the sentence: 'Neither Ram nor his friends ____ present.'",
+    "a": "is",
+    "b": "were / are",
+    "c": "was",
+    "d": "am",
+    "ans": "b"
+  },
+  {
+    "id": 173,
+    "q": "Complete the sentence: 'Bread and butter ____ my favorite breakfast.'",
+    "a": "are",
+    "b": "is",
+    "c": "were",
+    "d": "have",
+    "ans": "b"
+  },
+  {
+    "id": 174,
+    "q": "Choose the singular form of the word 'Criteria':",
+    "a": "Criterias",
+    "b": "Criterion",
+    "c": "Criterium",
+    "d": "Criteria",
+    "ans": "b"
+  },
+  {
+    "id": 175,
+    "q": "Choose the correct spelling:",
+    "a": "Knowledge",
+    "b": "Knowlege",
+    "c": "Nolage",
+    "d": "Knowledgee",
+    "ans": "a"
+  },
+  {
+    "id": 176,
+    "q": "Choose the correct spelling:",
+    "a": "Pronunciation",
+    "b": "Pronounciation",
+    "c": "Pronuncetion",
+    "d": "Prununciation",
+    "ans": "a"
+  },
+  {
+    "id": 177,
+    "q": "What is a single word for 'A person who cannot read and write'?",
+    "a": "Literate",
+    "b": "Illiterate",
+    "c": "Blind",
+    "d": "Scholar",
+    "ans": "b"
+  },
+  {
+    "id": 178,
+    "q": "What is a single word for 'A place where books are kept for reading'?",
+    "a": "Classroom",
+    "b": "Library",
+    "c": "Laboratory",
+    "d": "Office",
+    "ans": "b"
+  },
+  {
+    "id": 179,
+    "q": "Identify the type of sentence: 'Open page number 10.'",
+    "a": "Assertive",
+    "b": "Imperative (Command)",
+    "c": "Interrogative",
+    "d": "Exclamatory",
+    "ans": "b"
+  },
+  {
+    "id": 180,
+    "q": "Which part of speech connects words or sentences together?",
+    "a": "Preposition",
+    "b": "Conjunction",
+    "c": "Adverb",
+    "d": "Pronoun",
+    "ans": "b"
+  },
+  {
+    "id": 181,
+    "q": "Identify the conjunction in: 'He worked hard yet he failed.'",
+    "a": "worked",
+    "b": "yet",
+    "c": "failed",
+    "d": "hard",
+    "ans": "b"
+  },
+  {
+    "id": 182,
+    "q": "What is the opposite of 'Sharp'?",
+    "a": "Blunt",
+    "b": "Clever",
+    "c": "Quick",
+    "d": "Hard",
+    "ans": "a"
+  },
+  {
+    "id": 183,
+    "q": "What is the opposite of 'Safe'?",
+    "a": "Secure",
+    "b": "Dangerous",
+    "c": "Clean",
+    "d": "Easy",
+    "ans": "b"
+  },
+  {
+    "id": 184,
+    "q": "What is the synonym of 'Quiet'?",
+    "a": "Noisy",
+    "b": "Silent",
+    "c": "Loud",
+    "d": "Heavy",
+    "ans": "b"
+  },
+  {
+    "id": 185,
+    "q": "What is the past form of the verb 'Write'?",
+    "a": "Written",
+    "b": "Wrote",
+    "c": "Writes",
+    "d": "Writing",
+    "ans": "b"
+  },
+  {
+    "id": 186,
+    "q": "What is the past participle (V3) form of 'See'?",
+    "a": "Saw",
+    "b": "Seen",
+    "c": "Sees",
+    "d": "Seeing",
+    "ans": "b"
+  },
+  {
+    "id": 187,
+    "q": "Which underline word is a linking device? 'He was ill, <u>therefore</u> he was absent.'",
+    "a": "was",
+    "b": "therefore",
+    "c": "ill",
+    "d": "absent",
+    "ans": "b"
+  },
+  {
+    "id": 188,
+    "q": "Which sound is the odd one out based on pronunciation?",
+    "a": "Keep",
+    "b": "King",
+    "c": "City (starts with /s/ sound)",
+    "d": "Cool",
+    "ans": "c"
+  },
+  {
+    "id": 189,
+    "q": "Which word has a silent letter 'b'?",
+    "a": "Book",
+    "b": "Comb",
+    "c": "Bat",
+    "d": "Ball",
+    "ans": "b"
+  },
+  {
+    "id": 190,
+    "q": "Which word has a silent letter 't'?",
+    "a": "Ten",
+    "b": "Listen",
+    "c": "Table",
+    "d": "Cat",
+    "ans": "b"
+  },
+  {
+    "id": 191,
+    "q": "The primary purpose of continuous assessment is to map changes in: ",
+    "a": "Rote learning capacity",
+    "b": "Learning gaps and behavioral progress",
+    "c": "Parental income",
+    "d": "Exam score percentage only",
+    "ans": "b"
+  },
+  {
+    "id": 192,
+    "q": "Extensive reading is mainly done for:",
+    "a": "Deep analytical study",
+    "b": "Pleasure and general understanding",
+    "c": "Learning grammar rules",
+    "d": "Improving handwriting",
+    "ans": "b"
+  },
+  {
+    "id": 193,
+    "q": "Intensive reading focuses on:",
+    "a": "Reading for entertainment",
+    "b": "Detailed and deep study of the text",
+    "c": "Fast skimming",
+    "d": "Novels reading",
+    "ans": "b"
+  },
+  {
+    "id": 194,
+    "q": "In a multilingual classroom, a teacher should consider home language as a:",
+    "a": "Barrier",
+    "b": "Resource / Asset",
+    "c": "Problem",
+    "d": "Nuisance",
+    "ans": "b"
+  },
+  {
+    "id": 195,
+    "q": "Which skill is best developed through story-telling by the teacher?",
+    "a": "Writing",
+    "b": "Listening",
+    "c": "Reading",
+    "d": "Vocabulary spelling",
+    "ans": "b"
+  },
+  {
+    "id": 196,
+    "q": "What type of questions are most useful for objective and unbiased scoring?",
+    "a": "Essay type questions",
+    "b": "Multiple Choice Questions (MCQs)",
+    "c": "Short answer type questions",
+    "d": "Paragraph writing",
+    "ans": "b"
+  },
+  {
+    "id": 197,
+    "q": "The main focus of structural approach is on learning the language through:",
+    "a": "Translation",
+    "b": "Selected sentence patterns / structures",
+    "c": "Literature history",
+    "d": "Loud shouting",
+    "ans": "b"
+  },
+  {
+    "id": 198,
+    "q": "Which of the following is a sub-skill of writing?",
+    "a": "Skimming",
+    "b": "Drafting and Editing",
+    "c": "Scanning",
+    "d": "Predicting",
+    "ans": "b"
+  },
+  {
+    "id": 199,
+    "q": "What is the full form of CCE?",
+    "a": "Continuous and Complete Examination",
+    "b": "Continuous and Comprehensive Evaluation",
+    "c": "Compulsory Child Education",
+    "d": "Correct Classroom Evaluation",
+    "ans": "b"
+  },
+  {
+    "id": 200,
+    "q": "The primary aim of teaching English as a second language is to make learners:",
+    "a": "Grammar experts",
+    "b": "Effective communicators in real life",
+    "c": "Poetry writers",
+    "d": "Translators only",
+    "ans": "b"
+  }
+]
